@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+:root {
+font-size: 15px;
+font-family: 'Montserrat', sans-serif;
+--main-bg:linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+--VeryGrayishBlue: hsl(240, 78%, 98%);
+--LightGrayishBlue: hsl(234, 14%, 74%);
+--GrayBlue: hsl(233, 13%, 49%);
+--DarkGrayBlue: hsl(232, 13%, 33%);
+}
+
+ * {
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    text-align:center;
+} 
+
+body {
+    height:100vh;
+    background-image:var(--main-bg);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+}
+
+#wrapper {
+    width:clamp(315px, 70%, 1440px);
+    height:clamp(70vh, 100%, 100vh);
+    display:flex;
+    flex-direction:column;
+    align-self:center;
+    border:1px solid green;
+}
+
+img {
+    position:absolute;
+    max-width:2rem;
+}
+
+header {
+    max-width: 20rem;
+    margin-bottom: 4rem;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+header > h1 {
+    margin-top:2rem;
+    margin-bottom:1rem;
+    color:var(--GrayBlue);
+}
+
+
+section {
+    display:flex;
+    gap:1rem;
+    color:var(--GrayBlue);
+}
+
+ .toggle {
+    width:4rem;
+    background-color:var(--DarkGrayBlue);
+    border-radius:30px;
+    position:relative;
+}
+
+.toggle .ball {
+    width:3rem;
+    height:2rem;
+    padding:0.2rem;
+    border-radius:100%;
+    position:relative;
+    right:-15px;
+    background-color:white;
+    color:white;
+    transition:cubic-bezier(0.95, 0.05, 0.795, 0.035);
+}
+
+
+.toggle .ball:focus {
+    position:relative;
+    left:-15px;
+}
+
+.box {
+    margin-bottom:3rem;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    border:1px solid red;
+}
+
+.box1, .box3 {
+    width:clamp(80%, 80%, 100%);
+    padding:4rem;
+    background-color:white;
+    display:flex;
+}
+
+.box2 {
+    width:clamp(80%, 80%, 100%);
+    padding:4rem;
+    background-color: var(--GrayBlue);
+}
+
+ .info {
+    border-top:1.5px solid var(--LightGrayishBlue);
+    border-bottom:1.5px solid var(--LightGrayishBlue);
+
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);     
+}
