@@ -84,10 +84,9 @@ section {
 }
 
 
-/* .toggle .ball:active {
-    position:relative;
+.toggle .ball.active {
     left:-15px;
-} */
+}
 
 .box {
     margin-bottom:3rem;
