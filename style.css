@@ -62,29 +62,32 @@ section {
 }
 
  .toggle {
-    width:4rem;
+    width:6rem;
+    padding:0.9rem;
     background-color:var(--DarkGrayBlue);
     border-radius:30px;
     position:relative;
 }
 
 .toggle .ball {
-    width:3rem;
+    width:2rem;
     height:2rem;
-    padding:0.2rem;
+    padding:0.5rem;
     border-radius:100%;
-    position:relative;
-    right:-15px;
+    box-shadow:1px 1px 1px 1px hsla(0, 6%, 75%, 0.2);
+    position:absolute;
+    top:-2px;
+    right:2px;
     background-color:white;
     color:white;
     transition:cubic-bezier(0.95, 0.05, 0.795, 0.035);
 }
 
 
-.toggle .ball:focus {
+/* .toggle .ball:active {
     position:relative;
     left:-15px;
-}
+} */
 
 .box {
     margin-bottom:3rem;
