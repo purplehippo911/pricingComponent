@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
 :root {
-font-size: 15px;
-font-family: 'Montserrat', sans-serif;
---main-bg:linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
---VeryGrayishBlue: hsl(240, 78%, 98%);
---LightGrayishBlue: hsl(234, 14%, 74%);
---GrayBlue: hsl(233, 13%, 49%);
---DarkGrayBlue: hsl(232, 13%, 33%);
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    --main-bg:linear-gradient( 360deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    --VeryGrayishBlue: hsl(240, 78%, 98%);
+    --LightGrayishBlue: hsl(234, 14%, 74%);
+    --GrayBlue: hsl(233, 13%, 49%);
+    --DarkGrayBlue: hsl(232, 13%, 33%);
 }
 
- * {
+* {
     box-sizing:border-box;
     margin:0;
     padding:0;
@@ -18,20 +18,20 @@ font-family: 'Montserrat', sans-serif;
 } 
 
 body {
-    height:100vh;
+    max-height:150vh;
     background-image:var(--main-bg);
     display:flex;
-    flex-direction:column;
-    align-items:center;
     justify-content: center;
+    align-items:center;
 }
 
 #wrapper {
-    width:clamp(315px, 70%, 1440px);
-    height:clamp(70vh, 100%, 100vh);
+    width:clamp(37rem, 80%, 144rem);
+    height:clamp(70vh, 100%, 120vh);
     display:flex;
     flex-direction:column;
-    align-self:center;
+    align-items:center;
+    justify-content:center;
     border:1px solid green;
 }
 
@@ -42,10 +42,9 @@ img {
 
 header {
     max-width: 20rem;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
     display:flex;
     flex-direction:column;
-    align-items:center;
 }
 
 header > h1 {
@@ -89,12 +88,11 @@ section {
 }
 
 .box {
-    margin-bottom:3rem;
+    width:100%;
     display:flex;
     flex-direction:column;
     align-items:center;
     justify-content:center;
-    gap:10px;
     border:1px solid red;
 }
 
@@ -122,4 +120,12 @@ section {
 }
 .attribution a {
     color: hsl(228, 45%, 44%);     
+}
+
+
+@media (min-width:600px) {
+    .box{
+        align-items:center;
+        justify-content:center;
+    }
 }
