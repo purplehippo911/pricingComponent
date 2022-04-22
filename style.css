@@ -19,21 +19,20 @@ font-family: 'Montserrat', sans-serif;
 } 
 
 body {
-    height:100vh;
-    background:var(--VeryGrayishBlue);
+    min-height:100vh;
+    background-color:var(--VeryGrayishBlue);
     display:flex;
-    flex-direction:column;
+    justify-content:center;
     align-items:center;
 }
 
 #wrapper {
     width:clamp(315px, 70%, 1440px);
-    max-height:120rem;
+    min-height:100vh;
     display:flex;
     flex-direction:column;
-    align-self:center;
     align-items:center;
-    border:1px solid green;
+    background-color:var(--VeryGrayishBlue);
 }
 
 img {
@@ -54,7 +53,7 @@ img[alt="bg-bottom"] {
 
 header {
     max-width: 20rem;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     display:flex;
     flex-direction:column;
     align-items:center;
@@ -62,7 +61,6 @@ header {
 
 header > h1 {
     margin-top:2rem;
-    margin-bottom:1rem;
     color:var(--GrayBlue);
 }
 
@@ -74,8 +72,8 @@ section {
 }
 
  .toggle {
-    width:6rem;
-    padding:0.9rem;
+    width:4rem;
+    padding:1rem;
     background:var(--purple);
     border-radius:30px;
     position:relative;
@@ -83,12 +81,12 @@ section {
 
 .toggle .ball {
     width:2rem;
-    height:2rem;
+    height:1.9rem;
     padding:0.5rem;
     border-radius:100%;
     box-shadow:1px 1px 1px 1px hsla(0, 6%, 75%, 0.2);
     position:absolute;
-    top:-2px;
+    top:0px;
     right:2px;
     background-color:var(--VeryGrayishBlue);
     color:white;
@@ -101,27 +99,28 @@ section {
 }
 
 .box_con {
-    margin-bottom:3rem;
     display:flex;
-    flex-direction:column;
-    align-items:center;
     justify-content:center;
-    gap:10px;
+    gap:20px;
     border:1px solid red;
 }
 
 .box {
-    width:clamp(80%, 80%, 100%);
-    padding:4rem;
+    max-width:35rem;
+    padding:5rem;
     background-color:var(--VeryGrayishBlue);
     display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:15px;
+    border-radius:10px;
+    box-shadow:.1rem .1rem .3rem var(--lightGrayishBlue);
 }
 
 .box2 {
-    width:clamp(80%, 80%, 100%);
-    padding:4rem;
     background: var(--purple);
     color:var(--VeryGrayishBlue);
+    flex-grow:2;
 }
 
  .info {
@@ -140,7 +139,7 @@ section {
     width:80%;
     padding:0.5rem;
     border:0;
-    border-radius:10px;
+    border-radius:5px;
 }
 
 .box1 .info_btn, .box3 .info_btn {
@@ -167,4 +166,11 @@ section {
 }
 .attribution a {
     color: hsl(228, 45%, 44%);     
+}
+
+@media screen and (max-width:700px) {
+
+    .box_con {
+        flex-direction:column;
+    }
 }
