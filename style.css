@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
 :root {
+<<<<<<< HEAD
     font-size: 15px;
     font-family: 'Montserrat', sans-serif;
     --main-bg:linear-gradient( 360deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
@@ -8,6 +9,16 @@
     --LightGrayishBlue: hsl(234, 14%, 74%);
     --GrayBlue: hsl(233, 13%, 49%);
     --DarkGrayBlue: hsl(232, 13%, 33%);
+=======
+font-size: 15px;
+font-weight:700;
+font-family: 'Montserrat', sans-serif;
+--purple:linear-gradient(to bottom, hsl(236, 72%, 79%), hsl(237,63%, 64%));
+--VeryGrayishBlue: hsl(240, 78%, 98%);              
+--LightGrayishBlue: hsl(234, 14%, 74%);
+--GrayBlue: hsl(233, 13%, 49%);
+--DarkGrayBlue: hsl(232, 13%, 33%);
+>>>>>>> js
 }
 
 * {
@@ -18,14 +29,22 @@
 } 
 
 body {
+<<<<<<< HEAD
     max-height:150vh;
     background-image:var(--main-bg);
     display:flex;
     justify-content: center;
+=======
+    min-height:100vh;
+    background-color:var(--VeryGrayishBlue);
+    display:flex;
+    justify-content:center;
+>>>>>>> js
     align-items:center;
 }
 
 #wrapper {
+<<<<<<< HEAD
     width:clamp(37rem, 80%, 144rem);
     height:clamp(70vh, 100%, 120vh);
     display:flex;
@@ -33,23 +52,50 @@ body {
     align-items:center;
     justify-content:center;
     border:1px solid green;
+=======
+    width:clamp(315px, 70%, 1440px);
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+    background-color:var(--VeryGrayishBlue);
+>>>>>>> js
 }
 
 img {
-    position:absolute;
-    max-width:2rem;
+    position:fixed;
+    min-width:5rem;
+    max-width:10rem;
+}
+
+img[alt="bg-top"] {
+    top:0;
+    right:0;
+}
+
+img[alt="bg-bottom"] {
+    bottom:0;
+    left:0;
 }
 
 header {
     max-width: 20rem;
+<<<<<<< HEAD
     margin-bottom: 3rem;
     display:flex;
     flex-direction:column;
+=======
+    margin: 2rem;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    position:relative;
+>>>>>>> js
 }
 
 header > h1 {
-    margin-top:2rem;
-    margin-bottom:1rem;
+    margin-bottom:1.5rem;
     color:var(--GrayBlue);
 }
 
@@ -61,23 +107,27 @@ section {
 }
 
  .toggle {
-    width:6rem;
-    padding:0.9rem;
-    background-color:var(--DarkGrayBlue);
+    width:4rem;
+    padding:1rem;
+    background:var(--purple);
     border-radius:30px;
     position:relative;
 }
 
+.toggle:hover{
+    background:var(--LightGrayishBlue);
+}
+
 .toggle .ball {
     width:2rem;
-    height:2rem;
+    height:1.9rem;
     padding:0.5rem;
     border-radius:100%;
     box-shadow:1px 1px 1px 1px hsla(0, 6%, 75%, 0.2);
     position:absolute;
-    top:-2px;
+    top:0px;
     right:2px;
-    background-color:white;
+    background-color:var(--VeryGrayishBlue);
     color:white;
     transition:cubic-bezier(0.95, 0.05, 0.795, 0.035);
 }
@@ -87,45 +137,133 @@ section {
     left:-5px;
 }
 
+<<<<<<< HEAD
 .box {
     width:100%;
+=======
+.box_con {
+    max-width:fit-content;
+>>>>>>> js
     display:flex;
-    flex-direction:column;
-    align-items:center;
     justify-content:center;
+<<<<<<< HEAD
     border:1px solid red;
+=======
+    position:relative;
+    gap:20px;
+    background-color:var(--VeryGrayishBlue);
+>>>>>>> js
 }
 
-.box1, .box3 {
-    width:clamp(80%, 80%, 100%);
-    padding:4rem;
+.box {
+    width:clamp(20rem, 100%, 25rem);
+    padding:2.5rem;
     background-color:white;
     display:flex;
+    flex-direction:column;
+    gap:10px;
+    border-radius:10px;
+    box-shadow:.4rem .5rem .4rem hsla(0, 6%, 75%, 0.2);
 }
 
 .box2 {
-    width:clamp(80%, 80%, 100%);
-    padding:4rem;
-    background-color: var(--GrayBlue);
+    background: var(--purple);
+    color:var(--VeryGrayishBlue);
+}
+
+.info_title{
+    font-size:1.2em;
+    color:var(--GrayBlue);
+}
+
+.box2 .info_title {
+    color:var(--VeryGrayishBlue);
+}
+
+.price {
+    font-size:3.5em;
+    padding:3.4rem;
+    align-self:center;
 }
 
  .info {
+    width:clamp(16ch, 100%, 36ch);
+    padding:0.2rem;
     border-top:1.5px solid var(--LightGrayishBlue);
     border-bottom:1.5px solid var(--LightGrayishBlue);
 
 }
+
+.box2 .info {
+    border-top:1.5px solid var(--VeryGrayishBlue);
+    border-bottom:1.5px solid var(--VeryGrayishBlue);
+
+}
+
+ .info_btn {
+    width:100%;
+    padding:1rem;
+    margin-top:2.5rem;
+    align-self:center;
+    border:2px solid var(--LightGrayishBlue);
+    border-radius:5px;
+    background:var(--purple);
+    color:white;
+    font-weight:700;
+    text-transform:uppercase;
+    cursor:pointer;
+    transition:0.7s ease;
+}
+
+.box2 .info_btn {
+    color:var(--VeryGrayishBlue);
+    background:var(--VeryGrayishBlue);
+    border:2px solid white;
+}
+
+.box .info_btn:hover {
+    background:white;
+    color:var(--GrayBlue);
+}
+.box2 .info_btn {
+    background-color: var(--VeryGrayishBlue);
+    color:var(--GrayBlue);
+}
+
+.box2 .info_btn:hover {
+    background:inherit;
+    color:white;
+}
 .attribution {
-    font-size: 11px;
+    margin:2rem;
+    font-size: 1.1em;
     text-align: center;
 }
 .attribution a {
     color: hsl(228, 45%, 44%);     
 }
 
+<<<<<<< HEAD
 
 @media (min-width:600px) {
     .box{
         align-items:center;
         justify-content:center;
+=======
+@media screen and (max-width:700px) {
+
+    .box_con {
+        flex-direction:column;
+    }
+    .box{
+        width:fit-content;
+        padding:1rem;
+    }
+}
+
+@media screen and (min-width:700px) {
+    .box2 {
+    transform:scale(1.05);
+>>>>>>> js
     }
 }
