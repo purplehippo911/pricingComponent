@@ -114,7 +114,7 @@ section {
 }
 
 .box {
-    width:clamp(20rem, 100%, 22rem);
+    width:clamp(20rem, 100%, 25rem);
     padding:2.5rem;
     background-color:white;
     display:flex;
@@ -125,7 +125,6 @@ section {
 }
 
 .box2 {
-    transform:scale(1.05);
     background: var(--purple);
     color:var(--VeryGrayishBlue);
 }
@@ -206,5 +205,15 @@ section {
 
     .box_con {
         flex-direction:column;
+    }
+    .box{
+        width:fit-content;
+        padding:1rem;
+    }
+}
+
+@media screen and (min-width:700px) {
+    .box2 {
+    transform:scale(1.05);
     }
 }
