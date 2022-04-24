@@ -1,15 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
 :root {
-<<<<<<< HEAD
-    font-size: 15px;
-    font-family: 'Montserrat', sans-serif;
-    --main-bg:linear-gradient( 360deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
-    --VeryGrayishBlue: hsl(240, 78%, 98%);
-    --LightGrayishBlue: hsl(234, 14%, 74%);
-    --GrayBlue: hsl(233, 13%, 49%);
-    --DarkGrayBlue: hsl(232, 13%, 33%);
-=======
 font-size: 15px;
 font-weight:700;
 font-family: 'Montserrat', sans-serif;
@@ -18,7 +9,6 @@ font-family: 'Montserrat', sans-serif;
 --LightGrayishBlue: hsl(234, 14%, 74%);
 --GrayBlue: hsl(233, 13%, 49%);
 --DarkGrayBlue: hsl(232, 13%, 33%);
->>>>>>> js
 }
 
 * {
@@ -29,30 +19,14 @@ font-family: 'Montserrat', sans-serif;
 } 
 
 body {
-<<<<<<< HEAD
-    max-height:150vh;
-    background-image:var(--main-bg);
-    display:flex;
-    justify-content: center;
-=======
     min-height:100vh;
     background-color:var(--VeryGrayishBlue);
     display:flex;
     justify-content:center;
->>>>>>> js
     align-items:center;
 }
 
 #wrapper {
-<<<<<<< HEAD
-    width:clamp(37rem, 80%, 144rem);
-    height:clamp(70vh, 100%, 120vh);
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-    border:1px solid green;
-=======
     width:clamp(315px, 70%, 1440px);
     min-height:100vh;
     display:flex;
@@ -60,7 +34,6 @@ body {
     align-items:center;
     justify-content: center;
     background-color:var(--VeryGrayishBlue);
->>>>>>> js
 }
 
 img {
@@ -81,17 +54,11 @@ img[alt="bg-bottom"] {
 
 header {
     max-width: 20rem;
-<<<<<<< HEAD
-    margin-bottom: 3rem;
-    display:flex;
-    flex-direction:column;
-=======
     margin: 2rem;
     display:flex;
     flex-direction:column;
     align-items:center;
     position:relative;
->>>>>>> js
 }
 
 header > h1 {
@@ -137,22 +104,13 @@ section {
     left:-5px;
 }
 
-<<<<<<< HEAD
-.box {
-    width:100%;
-=======
 .box_con {
     max-width:fit-content;
->>>>>>> js
     display:flex;
     justify-content:center;
-<<<<<<< HEAD
-    border:1px solid red;
-=======
     position:relative;
     gap:20px;
     background-color:var(--VeryGrayishBlue);
->>>>>>> js
 }
 
 .box {
@@ -243,13 +201,6 @@ section {
     color: hsl(228, 45%, 44%);     
 }
 
-<<<<<<< HEAD
-
-@media (min-width:600px) {
-    .box{
-        align-items:center;
-        justify-content:center;
-=======
 @media screen and (max-width:700px) {
 
     .box_con {
@@ -264,6 +215,5 @@ section {
 @media screen and (min-width:700px) {
     .box2 {
     transform:scale(1.05);
->>>>>>> js
     }
 }
