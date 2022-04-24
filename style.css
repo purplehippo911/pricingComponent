@@ -81,6 +81,10 @@ section {
     position:relative;
 }
 
+.toggle:hover{
+    background:var(--LightGrayishBlue);
+}
+
 .toggle .ball {
     width:2rem;
     height:1.9rem;
@@ -110,9 +114,10 @@ section {
 }
 
 .box {
-    width:clamp(22rem, 100%, 25rem);
+    width:clamp(20rem, 100%, 22rem);
     padding:2.5rem;
     background-color:white;
+    display:flex;
     flex-direction:column;
     gap:10px;
     border-radius:10px;
@@ -120,9 +125,9 @@ section {
 }
 
 .box2 {
+    transform:scale(1.05);
     background: var(--purple);
     color:var(--VeryGrayishBlue);
-    flex-grow:2;
 }
 
 .info_title{
@@ -137,6 +142,7 @@ section {
 .price {
     font-size:3.5em;
     padding:3.4rem;
+    align-self:center;
 }
 
  .info {
@@ -158,7 +164,7 @@ section {
     padding:1rem;
     margin-top:2.5rem;
     align-self:center;
-    border:0;
+    border:2px solid var(--LightGrayishBlue);
     border-radius:5px;
     background:var(--purple);
     color:white;
@@ -171,10 +177,11 @@ section {
 .box2 .info_btn {
     color:var(--VeryGrayishBlue);
     background:var(--VeryGrayishBlue);
+    border:2px solid white;
 }
 
 .box .info_btn:hover {
-    background:inherit;
+    background:white;
     color:var(--GrayBlue);
 }
 .box2 .info_btn {
