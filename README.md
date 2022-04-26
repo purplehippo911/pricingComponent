@@ -37,8 +37,8 @@ Mobile:
 ![mobile](screenshots/mobile.png)
 ### Links
 
-- Solution URL: [solution URL](https://www.frontendmentor.io/solutions/interactive-pricing-component-Skg7N5OHHc)
-- Live Site URL: [live site URL](https://purplehippo911.github.io/pricingComponent)
+- Solution URL: [my solution](https://www.frontendmentor.io/solutions/interactive-pricing-component-Skg7N5OHHc)
+- Live Site URL: [my live site](https://purplehippo911.github.io/pricingComponent)
 
 ## My process
 
@@ -114,7 +114,7 @@ I am planning on learning Grid and continuing on to the junior challenges at fro
 
 - Github - [@purplehippo911](https://github.com/purplehippo911)
 - Frontend Mentor - [@purplehippo911](https://www.frontendmentor.io/profile/purplehippo911)
--  Discord - [discord](mashedapples222#7574)
+-  Discord - [mashedapples222#7574]
 
 
 ## Acknowledgments
