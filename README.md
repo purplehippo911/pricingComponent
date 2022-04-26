@@ -4,17 +4,19 @@ This is a solution to the [Pricing component with toggle challenge on Frontend M
 
 ## Table of contents
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
+- [Frontend Mentor - Pricing component with toggle solution](#frontend-mentor---pricing-component-with-toggle-solution)
+  - [Table of contents](#table-of-contents)
+  - [Overview](#overview)
+    - [The challenge](#the-challenge)
+    - [Screenshot](#screenshot)
+    - [Links](#links)
+  - [My process](#my-process)
+    - [Built with](#built-with)
+    - [What I learned](#what-i-learned)
+    - [Continued development](#continued-development)
+    - [Useful resources](#useful-resources)
+  - [Author](#author)
+  - [Acknowledgments](#acknowledgments)
 
 
 ## Overview
@@ -35,8 +37,8 @@ Mobile:
 ![mobile](screenshots/mobile.png)
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [solution URL](https://www.frontendmentor.io/solutions/interactive-pricing-component-Skg7N5OHHc)
+- Live Site URL: [live site URL](https://purplehippo911.github.io/pricingComponent)
 
 ## My process
 
@@ -51,22 +53,50 @@ Mobile:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
+I learned how to make and style a toggle switch, I became more comfortable with writing in JS and with using CSS flexbox when aligning elements. I also learnt how to react to keyboard inputs with Javascript.
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+ <header>
+        <h1>Our Pricing</h1>
+        <section>
+          Annually
+          <div class="toggle"><span class="ball"></span></div>
+          Monthly
+        </section>
+      </header>
 ```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.toggle .ball {
+    width:2rem;
+    height:1.9rem;
+    padding:0.5rem;
+    border-radius:100%;
+    box-shadow:1px 1px 1px 1px hsla(0, 6%, 75%, 0.2);
+    position:absolute;
+    top:0px;
+    right:2px;
+    background-color:var(--VeryGrayishBlue);
+    color:white;
+    transition:cubic-bezier(0.95, 0.05, 0.795, 0.035);
 }
+
 ```
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+unction toggleOn() {
+    i++;
+    ball.classList.add('active');
+    price1.textContent = "$199.99";
+    price2.textContent = "$249.99";
+    price3.textContent = "$399.99";
+    console.log('hi')
+    if(i == 2 || i == 4 || i == 6 || i == 8 || i == 10 || i == 12 || i == 14 || i == 16 || i == 18 || i == 20 || i == 22) {
+        ball.classList.remove('active');
+        price1.textContent = "$19.99";
+        price2.textContent = "$24.99";
+        price3.textContent = "$39.99";
+    }
 }
+
 ```
 
 
