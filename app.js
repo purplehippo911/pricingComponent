@@ -3,7 +3,6 @@ const ball = toggle.querySelector('.toggle .ball');
 const price1 = document.querySelector('.price1');
 const price2 = document.querySelector('.price2');
 const price3 = document.querySelector('.price3');
-let i = 0;
 
 function toggleOn() {
     i++;
